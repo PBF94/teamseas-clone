@@ -16,6 +16,10 @@ export class DonationsService {
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} donation`;
+    return this.prisma.donation.findUnique({
+      where: {
+        id,
+      },
+    });
   }
 }
