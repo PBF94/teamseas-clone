@@ -5,6 +5,9 @@
   "author": "",
   "private": true,
   "license": "UNLICENSED",
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
@@ -28,6 +31,7 @@
     "@nestjs/graphql": "^10.1.1",
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^8.0.0",
+    "@prisma/client": "4.3.1",
     "apollo-server-express": "^3.10.2",
     "graphql": "^16.6.0",
     "graphql-iso-date": "^3.6.1",
