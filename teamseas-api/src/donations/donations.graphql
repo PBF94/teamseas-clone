@@ -26,6 +26,10 @@ input OrderByParams {
   direction: String
 }
 
+type Result {
+  total: Int!
+}
+
 type Query {
   donations(orderBy: OrderByParams): [Donation]!
   donation(id: Int!): Donation
@@ -34,4 +38,8 @@ type Query {
 
 type Mutation {
   createDonation(createDonationInput: CreateDonationInput!): Donation!
+}
+
+type Subscription {
+  totalUpdated: Result
 }
