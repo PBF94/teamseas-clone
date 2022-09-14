@@ -14,8 +14,8 @@ export class DonationsResolver {
   }
 
   @Query('donations')
-  findAll() {
-    return this.donationsService.findAll();
+  findAll(@Args('orderBy') orderBy?: { field?: string; direction?: string }) {
+    return this.donationsService.findAll(orderBy);
   }
 
   @Query('donation')
