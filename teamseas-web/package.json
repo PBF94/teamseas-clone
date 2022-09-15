@@ -14,6 +14,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
+    "date-fns": "^2.29.3",
     "framer-motion": "^6.2.9",
     "graphql": "^16.6.0",
     "graphql-ws": "^5.10.2",
